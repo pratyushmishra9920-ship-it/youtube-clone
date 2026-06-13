@@ -4,7 +4,7 @@ A responsive YouTube homepage clone built using HTML5 and CSS3. This project rec
 
 ## Live Demo
 
-(Add your GitHub Pages link here)
+https://pratyushmishra9920-ship-it.github.io/youtube-clone/
 
 ## Features
 
