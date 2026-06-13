@@ -1,1 +1,211 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 
+    z-index: 100;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.hamburger-icon {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-icon {
+    height: 24px;
+}
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 40px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+
+    width: 0;
+}
+.search-container {
+    display: flex;
+    flex: 1;
+}
+.search-bar:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+
+.search-container:focus-within .search-bar {
+    border-color: rgb(5, 71, 126);
+    border-style: solid;
+    outline: none;
+}
+.search-container:focus-within .search-button {
+    border-left-color: rgb(5, 71, 126);
+    outline: none;
+}
+
+
+.search-bar::placeholder {
+    font-family: Roboto,Arial;
+    font-size: 16px ;
+}
+.search-button {
+    height: 42px;
+    width: 66px;
+    margin-right: 10px;   
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(204, 204, 204);
+    margin-left: -2px;
+    border-radius: 1px;
+}
+.search-button,
+.voice-search-button {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    position: absolute;
+    bottom: -36px;
+    background-color: rgb(108, 107, 107);
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 2px;
+
+    opacity: 0;
+    
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+}
+.search-icon {
+    height: 26px;
+    margin-top: 5px;
+}
+.voice-search-button {
+    height: 42px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.voice-search-icon {
+    height: 26px;
+    margin-top: 5px;
+    background-color: rgb(247, 247, 247);
+}
+.right-section {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+    flex-shrink: 0;
+}
+.upload-icon {
+    padding-top: 5px;
+    height: 24px;
+    cursor: pointer;
+}
+.upload-icon-tooltip,
+.youtube-icon-tooltip {
+    position: relative;
+     display: flex;
+    justify-content: center;
+}
+.upload-icon-tooltip .tooltip,
+.youtube-icon-tooltip .tooltip,
+.notification-icon-stamp .tooltip {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    position: absolute;
+    bottom: -34px;
+    background-color: rgb(108, 107, 107);
+    color: white;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+.upload-icon-tooltip:hover .tooltip,
+.youtube-icon-tooltip:hover .tooltip,
+.notification-icon-stamp:hover .tooltip {
+    opacity: 1;
+}
+.youtube-app-icon {
+    height: 24px;
+    cursor: pointer;
+}
+.notification-icon {
+    height: 24px;
+    cursor: pointer;
+}
+.notification-icon-stamp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.notification-stamp-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(218, 3, 3);
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+}
+.my-channel-icon {
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
