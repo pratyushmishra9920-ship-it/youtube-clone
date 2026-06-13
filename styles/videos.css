@@ -27,7 +27,7 @@
     margin-bottom: 10px;
 }
 .channel-name {
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(96, 96, 96);
     margin-bottom: 2px;
     cursor: pointer;
@@ -37,7 +37,7 @@
     color: inherit;
 }
 .channel-stats {
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(96, 96, 96);
 }
 .channel-picture {
